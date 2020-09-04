@@ -15,7 +15,7 @@
     <script src="/js/home.js"></script>
 </head>
 
-<body onload="validaLogin()">
+<body onload="validaLogin();buscarPDV()">
     <div class="navbar navbar-dark bg-dark  mb-1">
         <nav class="col-12 w-100 navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="col-md-3 col-sm-3 col-xs-3">
@@ -54,26 +54,29 @@
                 <div class="jumbotron border border-secondary rounded">
                     <form id="formSol"> 
                         <div class="row col-12">
-                            Técnico<input class="form-control" type="text" title="Técnico" id="txtnome">
+                            Técnico<input class="form-control" type="text" title="Técnico" id="txtNome">
                         </div>
                         <div class="row col-12">
-                            Operadora<input class="form-control" type="text" title="Operadora" id="txtoperadora">
+                            Operadora<input class="form-control" type="text" title="Operadora" id="txtOperadora">
                         </div>
                         <div class="row col-12">
                             Celular / Whatsapp<input class="form-control" type="text" title="Celular / Whatsapp"
-                            id="txtcelular">
+                            id="txtCelular">
                         </div>
                         <div class="row w-100">
                             <div class="col-6">
-                                Documento<input class="form-control" type="text" title="Documento" id="txtdocumento">
+                                Documento<input class="form-control" type="text" title="Documento" id="txtDocumento">
                             </div>
                             <div class="col-6">
-                                 PDV<input class="form-control" type="text" title="PDV" id="txtpdv">
+                                 PDV
+                                 <div id="cmbResposta">
+                                </div>
                             </div>
                         </div>
                         <div class="row w-100">
                             <div class="col-6">
-                                Data<input class="form-control" type="text" title="Data" id="txtdata">
+                                Data<input class="form-control" type="date" title="Data" id="dataSol">    
+                                
                             </div>
                             <div class="col-6">
                                 Hora<input class="form-control" type="text" title="Hora" id="txthora">

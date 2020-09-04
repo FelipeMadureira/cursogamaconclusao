@@ -18,7 +18,7 @@ public class PdvController {
     private PdvDAO dao;
 
     //Recuperar lista de PDVs
-    @GetMapping("/pdvs")
+    @GetMapping("/pdvs") 
     public List<Pdv> listarTodos(){
         List<Pdv> lista = (List<Pdv>) dao.findAll();
         return lista;

@@ -22,13 +22,13 @@ function logout() {
 }
 
 function home(){
-    window.location="http://localhost:5500/home.html"; 
+    window.location="home.html"; 
 }
 
 function relatorio(){
-    window.location="http://localhost:5500/relatorio.html"; 
+    window.location="relatorio.html"; 
 }
 
 function solicitacoes(){
-    window.location="http://localhost:5500/solicitacoes.html"; 
+    window.location="solicitacoes.html"; 
 }
