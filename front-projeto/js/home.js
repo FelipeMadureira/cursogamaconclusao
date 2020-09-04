@@ -7,8 +7,13 @@ function validaLogin() {
     }
 
     let jsonUser = JSON.parse(userTxt); //transforma o text em um Json
-    document.getElementById("user").innerHTML = `${jsonUser.nome} ( ${jsonUser.cpf} )`;
+    document.getElementById("user").innerHTML = `&nbsp;${jsonUser.nome} ( ${jsonUser.racf} )`;
     document.getElementById("imgUser").innerHTML = `<img src="${jsonUser.linkFoto}">`;
+
+    cargo = `${jsonUser.cargo}`;
+    if (cargo == "tecnico"){
+        document.getElementById("listaAgendamento").style.display = 'none';
+    }
 }
 
 function logout() {
