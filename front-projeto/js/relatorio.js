@@ -1,11 +1,11 @@
-function buscarPorStatus() {
+function buscarPorStatus() { 
     let statusSelect = document.getElementById("sel_status");
     let statusValue = statusSelect[statusSelect.selectedIndex].value; //obtem o valor status selecionado
 
     fetch("http://localhost:8080/pedidos/status/"+statusValue)
         .then(res => res.json())
         .then(result => preencheResposta(result));
-}
+} 
 
 function preencheResposta(resposta) {
     //console.log(resposta); //avaliar resposta antes de dar sequencia

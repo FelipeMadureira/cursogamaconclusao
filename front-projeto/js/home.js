@@ -1,4 +1,4 @@
-function validaLogin() {
+function validaLogin() { 
     let userTxt = localStorage.getItem("userLogged");
 
     //verificar se o usuário está logado
