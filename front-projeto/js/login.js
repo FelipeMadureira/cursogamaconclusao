@@ -12,7 +12,7 @@ function autenticar(event) {
     let loginMsg = {
         email: usuario.value,
         racf: usuario.value,
-        senha: senha.value
+        psw: senha.value
     }
  
     let cabecalho = {
@@ -24,9 +24,9 @@ function autenticar(event) {
     }
 
     
-    // envia o pedido para o servidor e socontinua quando chegar a resposta(then)
-    //fetch('http://localhost:8080/usuario/login',cabecalho)
-    //.then( res => tratarResposta(res)); //arrow function chamando a função resposta
+    //envia o pedido para o servidor e socontinua quando chegar a resposta(then)
+    fetch('http://localhost:8080/funcionario/login',cabecalho)
+    .then( res => tratarResposta(res)); //arrow function chamando a função resposta
          //res é resposta que veio do backend
 }
 
@@ -42,5 +42,5 @@ function tratarResposta (res){
 function fazerLogin(res){
     //armazenar no localStorage os dados do usuário que fez login
     localStorage.setItem("userLogged", JSON.stringify(res));
-    window.location="solicitacoes.html"; 
+    window.location="home.html"; 
 }
