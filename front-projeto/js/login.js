@@ -3,8 +3,14 @@ function autenticar(event) {
     let usuario = document.getElementById("txtUsuario");
     let senha = document.getElementById("txtSenha");
 
+    if (usuario.value == "" || senha.value == ""){
+        document.getElementById("msgErro").innerHTML = "Preencha o usuário e senha";
+        formLogin.txtUsuario.focus;
+        return false;
+    }
+
     let loginMsg = {
-        funcional: usuario.value,
+        email: usuario.value,
         racf: usuario.value,
         senha: senha.value
     }

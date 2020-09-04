@@ -11,11 +11,12 @@
 
     <link rel="stylesheet" href="/css/estilo.css">
 
-    <script src="/js/login.js"></script>
+    <script src="/js/home.js"></script>
 
 </head>
 
-<body>
+<!--<body onload="validaLogin()">-->
+<body > 
     <div class="navbar navbar-dark bg-dark  mb-1">
         <nav class="col-12 w-100 navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="col-md-3 col-sm-3 col-xs-3">
@@ -24,13 +25,13 @@
             <div class="col-md-8 col-sm-3 col-xs-3">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item  mb-1">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="javascript:home()">Home</a>
                     </li>
                     <li class="nav-item mb-1">
-                        <a class="nav-link" href="#">Lista de Agendamento</a>
+                        <a class="nav-link" href="javascript:relatorio()">Lista de Agendamento</a>
                     </li>
                     <li class="nav-item mb-1">
-                        <a class="nav-link" href="#">Solicitações</a>
+                        <a class="nav-link" href="javascript:solicitacoes()">Solicitações</a>
                     </li>
                 </ul>
             </div>
